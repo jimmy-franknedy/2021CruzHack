@@ -1,0 +1,35 @@
+hex colors
+  left to right:
+    blue: #067284 rgb(6, 114, 132)
+    bright_blue: 0FAAC3 rgb(15, 170, 195)
+    purple: #650651 rgb(101, 6, 81)
+    organge: #A75008 rgb(167, 80, 8)
+    bright-orange: #DC7D2D rgb(220, 125, 45)
+    yellow: #EEC636 rgb(238, 198, 54)
+    cyan: #25C1A7 rgb(37, 193, 167)
+
+
+
+
+
+# import the time module import time 
+  
+# define the countdown func. 
+def countdown(t): 
+    
+    while t: 
+        mins, secs = divmod(t, 60) 
+        timer = '{:02d}:{:02d}'.format(mins, secs) 
+        print(timer, end="\r") 
+        time.sleep(1) 
+        t -= 1
+      
+    print('Fire in the hole!!') 
+  
+  
+# input time in seconds 
+t = input("Enter the time in seconds: ") 
+  
+# function call 
+countdown(int(t))
+
